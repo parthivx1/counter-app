@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins' , sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg,rgb(228, 10, 228) ,rgb(119, 213, 245));
+    color:rgb(0, 0, 0);
+    
+}
+.counter-container{
+    background:rgb(255, 255, 255) ;
+    padding:40px;
+    height: 70vh;
+    width: min(400px, 90%);
+        text-align: center;
+    
+    border-radius: 10px;
+}
+
+.counter{
+    font-size: 80px;
+    
+    
+}
+
+.controls {
+    padding:40px;
+    margin:20px;
+
+}
+.controls #incbtn{
+    background-color: rgb(152, 242, 152);
+    padding:10px 10px;
+    cursor: pointer;
+    margin-bottom:10px;
+    border-radius: 10px;
+    width: 100px;
+    
+}
+.controls #decbtn{
+    padding:10px 10px;
+    cursor: pointer;
+    background-color: rgb(236, 76, 76);
+    margin-bottom:10px;
+    border-radius: 10px;
+    width: 100px;
+    
+}
+.controls #resetbtn{
+       width: 100%;
+    max-width: 220px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 104);
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainbtn{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.controls button{
+    border: 2px solid black;
+}
+
+.controls #incbtn:hover{
+    background-color: rgb(110, 236, 110)
+
+}
+.controls #decbtn:hover{
+
+
+    background-color: rgb(239, 57, 57);
+}
+.controls #resetbtn:hover{
+    background-color: rgb(245, 245, 43);
+}
+.controls button{
+    
+    transition: background-color 0.2s ease,
+                transform 0.1s ease,
+                box-shadow 0.2s ease;
+}
+.controls button:active{
+    transform: scale(0.96);
+}
